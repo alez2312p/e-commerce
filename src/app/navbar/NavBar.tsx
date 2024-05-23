@@ -7,7 +7,7 @@ import ShoppingCartButton from './ShoppingCartButton';
 import ToggleTheme from './ToggleTheme';
 import UserMenuButton from './UserMenuButton';
 import { getServerSession } from 'next-auth';
-import { authOptions } from '../api/auth/[...nextauth]/route';
+import { authOptions } from '@/lib/authOptions';
 
 async function searchProducts(formData: FormData) {
     "use server";
